@@ -7,6 +7,7 @@ const loadVideos = () => {
 const displayVideos = (videos) => {
     // get the element 
     const videosContainer = document.getElementById('video-container');
+    videosContainer.innerHTML ="";
     // make a loop to get the video. making a forEach loop:
     videos.forEach(element => {
         console.log(element);
@@ -42,5 +43,5 @@ const displayVideos = (videos) => {
     });
 }
 
-loadVideos()
+
 

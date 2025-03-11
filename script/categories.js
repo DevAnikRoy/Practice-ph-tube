@@ -16,7 +16,7 @@ function displayCategories (category) {
         const categoryDiv = document.createElement('div');
         // set innerHtml of element 
         categoryDiv.innerHTML = `
-            <button class="bg-[#ececec] text-[#ff1e3c] font-semibold text-sm py-1 px-4 rounded-md hover:cursor-pointer hover:bg-[#ff1e3c] hover:text-white">${cate.category}</button>
+            <button onclick = "loadCategoryVideos(${cate.category_id})" class="bg-[#ececec] text-[#ff1e3c] font-semibold text-sm py-1 px-4 rounded-md hover:cursor-pointer hover:bg-[#ff1e3c] hover:text-white">${cate.category}</button>
         `;
         // Append the created element
         categoryContainer.append(categoryDiv);
